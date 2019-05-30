@@ -1,0 +1,312 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/jgwie/ontologies/2019/1/SpatialQuestionOntology#"
+     xml:base="http://www.semanticweb.org/jgwie/ontologies/2019/1/SpatialQuestionOntology"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/jgwie/ontologies/2019/1/SpatialQuestionOntology">
+        <owl:imports rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf"/>
+        <rdfs:comment xml:lang="en">This ontology allows to describe the information contained within spatial questions.</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/jgwie/ontologies/2019/1/SpatialQuestionOntology#hasGoalAttribute -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jgwie/ontologies/2019/1/SpatialQuestionOntology#hasGoalAttribute">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jgwie/ontologies/2019/1/SpatialQuestionOntology#Question"/>
+        <rdfs:range rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#Attribute"/>
+        <rdfs:comment xml:lang="en">This property defines the goal attribute of a question</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jgwie/ontologies/2019/1/SpatialQuestionOntology#hasInputAttribute -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jgwie/ontologies/2019/1/SpatialQuestionOntology#hasInputAttribute">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jgwie/ontologies/2019/1/SpatialQuestionOntology#Question"/>
+        <rdfs:range rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#Attribute"/>
+        <rdfs:comment xml:lang="en">This property defines the input attribute of a question</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jgwie/ontologies/2019/1/SpatialQuestionOntology#hasSpatialExtent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jgwie/ontologies/2019/1/SpatialQuestionOntology#hasSpatialExtent">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jgwie/ontologies/2019/1/SpatialQuestionOntology#Question"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jgwie/ontologies/2019/1/SpatialQuestionOntology#SpatialExtent"/>
+        <rdfs:comment xml:lang="en">This property defines the spatial extent of a question</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jgwie/ontologies/2019/1/SpatialQuestionOntology#hasSupportAttribute -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jgwie/ontologies/2019/1/SpatialQuestionOntology#hasSupportAttribute">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jgwie/ontologies/2019/1/SpatialQuestionOntology#Question"/>
+        <rdfs:range rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#SupportAttribute"/>
+        <rdfs:comment xml:lang="en">This property defines the support attribute of a question</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jgwie/ontologies/2019/1/SpatialQuestionOntology#hasTemporalExtent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jgwie/ontologies/2019/1/SpatialQuestionOntology#hasTemporalExtent">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jgwie/ontologies/2019/1/SpatialQuestionOntology#Question"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jgwie/ontologies/2019/1/SpatialQuestionOntology#TemporalExtent"/>
+        <rdfs:comment xml:lang="en">This property defines the temporal extent of a question</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jgwie/ontologies/2019/1/SpatialQuestionOntology#translatesTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jgwie/ontologies/2019/1/SpatialQuestionOntology#translatesTo">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jgwie/ontologies/2019/1/SpatialQuestionOntology#Question"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jgwie/ontologies/2019/1/SpatialQuestionOntology#Query"/>
+        <rdfs:comment xml:lang="en">This property defines the query which the spatial question translates to</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/jgwie/ontologies/2019/1/SpatialQuestionOntology#Accessibility -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jgwie/ontologies/2019/1/SpatialQuestionOntology#Accessibility">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jgwie/ontologies/2019/1/SpatialQuestionOntology#Question"/>
+        <rdfs:comment xml:lang="en">The class of accessibility analysis questions</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jgwie/ontologies/2019/1/SpatialQuestionOntology#Accuracy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jgwie/ontologies/2019/1/SpatialQuestionOntology#Accuracy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jgwie/ontologies/2019/1/SpatialQuestionOntology#Question"/>
+        <rdfs:comment xml:lang="en">The class of questions which focuses on the spatial concept of accuracy</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jgwie/ontologies/2019/1/SpatialQuestionOntology#Cluster -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jgwie/ontologies/2019/1/SpatialQuestionOntology#Cluster">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jgwie/ontologies/2019/1/SpatialQuestionOntology#SpatialDistribution"/>
+        <rdfs:comment xml:lang="en">The class of cluster analysis questions</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jgwie/ontologies/2019/1/SpatialQuestionOntology#Extent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jgwie/ontologies/2019/1/SpatialQuestionOntology#Extent">
+        <rdfs:comment xml:lang="en">The superclass of extents</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jgwie/ontologies/2019/1/SpatialQuestionOntology#Granularity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jgwie/ontologies/2019/1/SpatialQuestionOntology#Granularity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jgwie/ontologies/2019/1/SpatialQuestionOntology#Question"/>
+        <rdfs:comment xml:lang="en">The class of questions which focus on the concept of granularity</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jgwie/ontologies/2019/1/SpatialQuestionOntology#LandUse -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jgwie/ontologies/2019/1/SpatialQuestionOntology#LandUse">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jgwie/ontologies/2019/1/SpatialQuestionOntology#Question"/>
+        <rdfs:comment xml:lang="en">The class of questions in which land use (change/model) is a core aspect of the analysis</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jgwie/ontologies/2019/1/SpatialQuestionOntology#NetworkAnalysis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jgwie/ontologies/2019/1/SpatialQuestionOntology#NetworkAnalysis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jgwie/ontologies/2019/1/SpatialQuestionOntology#Question"/>
+        <rdfs:comment xml:lang="en">The class of questions which focus on network analysis</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jgwie/ontologies/2019/1/SpatialQuestionOntology#PopulationDistribution -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jgwie/ontologies/2019/1/SpatialQuestionOntology#PopulationDistribution">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jgwie/ontologies/2019/1/SpatialQuestionOntology#SpatialDistribution"/>
+        <rdfs:comment xml:lang="en">The class of population distribution type questions</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jgwie/ontologies/2019/1/SpatialQuestionOntology#Query -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jgwie/ontologies/2019/1/SpatialQuestionOntology#Query">
+        <rdfs:comment xml:lang="en">The class of queries. This is the SPARQL notation the spatial question translates to</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jgwie/ontologies/2019/1/SpatialQuestionOntology#Question -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jgwie/ontologies/2019/1/SpatialQuestionOntology#Question">
+        <rdfs:comment xml:lang="en">The class of spatial questions in Human Geography</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jgwie/ontologies/2019/1/SpatialQuestionOntology#Regression -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jgwie/ontologies/2019/1/SpatialQuestionOntology#Regression">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jgwie/ontologies/2019/1/SpatialQuestionOntology#Question"/>
+        <rdfs:comment xml:lang="en">The class of questions which use a type of regression analysis to investigate a spatial phenomenon</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jgwie/ontologies/2019/1/SpatialQuestionOntology#SpatialDistribution -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jgwie/ontologies/2019/1/SpatialQuestionOntology#SpatialDistribution">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jgwie/ontologies/2019/1/SpatialQuestionOntology#Question"/>
+        <rdfs:comment xml:lang="en">The class of questions which analyse spatial distribution</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jgwie/ontologies/2019/1/SpatialQuestionOntology#SpatialExtent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jgwie/ontologies/2019/1/SpatialQuestionOntology#SpatialExtent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jgwie/ontologies/2019/1/SpatialQuestionOntology#Extent"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/jgwie/ontologies/2019/1/SpatialQuestionOntology#TemporalExtent"/>
+        <rdfs:comment xml:lang="en">The class of spatial extents. This is the study area of a question.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jgwie/ontologies/2019/1/SpatialQuestionOntology#SpatiotemporalTrend -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jgwie/ontologies/2019/1/SpatialQuestionOntology#SpatiotemporalTrend">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jgwie/ontologies/2019/1/SpatialQuestionOntology#Question"/>
+        <rdfs:comment xml:lang="en">The class of questions which investigate a spatiotemporal trend</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jgwie/ontologies/2019/1/SpatialQuestionOntology#StatisticalRegion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jgwie/ontologies/2019/1/SpatialQuestionOntology#StatisticalRegion">
+        <rdfs:subClassOf rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#SupportAttribute"/>
+        <rdfs:comment xml:lang="en">The class of support attributes which are a statistical region</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jgwie/ontologies/2019/1/SpatialQuestionOntology#Suitability -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jgwie/ontologies/2019/1/SpatialQuestionOntology#Suitability">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jgwie/ontologies/2019/1/SpatialQuestionOntology#Question"/>
+        <rdfs:comment xml:lang="en">The class of suitability analysis questions</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jgwie/ontologies/2019/1/SpatialQuestionOntology#SuitabilityScore -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jgwie/ontologies/2019/1/SpatialQuestionOntology#SuitabilityScore">
+        <rdfs:subClassOf rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#MeasureAttribute"/>
+        <rdfs:comment xml:lang="en">The class of suitability scores</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jgwie/ontologies/2019/1/SpatialQuestionOntology#TemporalExtent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jgwie/ontologies/2019/1/SpatialQuestionOntology#TemporalExtent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jgwie/ontologies/2019/1/SpatialQuestionOntology#Extent"/>
+        <rdfs:comment xml:lang="en">The class of temporal extents. This is the study period of the question.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jgwie/ontologies/2019/1/SpatialQuestionOntology#Track -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jgwie/ontologies/2019/1/SpatialQuestionOntology#Track">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jgwie/ontologies/2019/1/SpatialQuestionOntology#Question"/>
+        <rdfs:comment xml:lang="en">The class of track analysis questions</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/jgwie/ontologies/2019/1/SpatialQuestionOntology#Accessibility"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jgwie/ontologies/2019/1/SpatialQuestionOntology#Cluster"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jgwie/ontologies/2019/1/SpatialQuestionOntology#LandUse"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jgwie/ontologies/2019/1/SpatialQuestionOntology#Suitability"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jgwie/ontologies/2019/1/SpatialQuestionOntology#Track"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/jgwie/ontologies/2019/1/SpatialQuestionOntology#Accessibility"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jgwie/ontologies/2019/1/SpatialQuestionOntology#Cluster"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jgwie/ontologies/2019/1/SpatialQuestionOntology#Suitability"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/jgwie/ontologies/2019/1/SpatialQuestionOntology#Extent"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jgwie/ontologies/2019/1/SpatialQuestionOntology#Query"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jgwie/ontologies/2019/1/SpatialQuestionOntology#Question"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.6.2018-09-06T00:27:41Z) https://github.com/owlcs/owlapi -->
+
